@@ -18,5 +18,10 @@ const data=[
     question:"can I create an accordion component with a different framework?",
     answer:"yes of course,it is very possible to create an accordian component with another from"
 },
+{
+    id:"5",
+    question:"can I create an accordion component with a different framework?",
+    answer:"yes of course,it is very possible to create an accordian component with another from"
+},
 ];
 export default data;

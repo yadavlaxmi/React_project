@@ -4,8 +4,8 @@ import Accordian from './Components/accordian';
 function App() {
   return (
     <div className="App">
+       <h1>HANDLE SINGLE SELECTION</h1>
       <Accordian/>
-      <h1>hii</h1>
       </div>
   );
 }

@@ -1,16 +1,17 @@
 import { useState } from "react";
 import data from "./data";
-
+import "./style.css";
 export default function Accordian() {
 const [selected, setSelected] = useState(null);
 function handleSingleSelection(getCurrentId) {
         // console.log(getCurrentId);
-    setSelected(getCurrentId)
+    setSelected(getCurrentId=== selected ? null: getCurrentId)
 }
-console.log(selected)
+// console.log(selected)
 return (
+    
     <div className="wrapper">
-        <div className="accordian">
+         <div className="accordian">
             {data && data.length > 0 ? (
                 data.map((dataItem, index) => (
                     <div className="item" key={index}>
@@ -30,6 +31,7 @@ return (
                 ))
             ) : (
                 <div>No data found</div>
+                
         )}
         </div>
     </div>
